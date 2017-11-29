@@ -5,7 +5,8 @@
     <title>Document</title>
 </head>
 <body>
-    hello
+    Hello.Ha nem találtál semmi érdekeset akkor katt ide >
+    
     <a href="index.html">vissza a főoldarra!</a>    
     <h2><a href="https://worldofwarcraft.com/en-us/" targer="_blank">Ez a wow gamenek a linkje</a></h2>
     
@@ -17,7 +18,7 @@
     
               <p>ez is egy inline style, csak több css property-t adtunk meg</p>
                
-               <div style="background-color: blue;
+    <div style="background-color: blue;
                 height: 300px;
                 text-align: center;    
                 color: white;
@@ -28,9 +29,8 @@
       
       <p>3. css class: "pirosdiv" css classal ellátott html elem, megkapja a style tag-ben lévő .pirodiv összesen css property-t </p>
        
-       <div class="pirosdiv"> Ez egy piros div.</div>
-
-<div id="lekerekitett">Ennek a széle le van kerekítve</div>
+    <div class="pirosdiv"> Ez egy piros div.</div>
+    <div id="lekerekitett">Ennek a széle le van kerekítve</div>
   
   div.kekdiv
   div#valami
@@ -42,27 +42,29 @@
    /*a pirosdiv class-al ellátott html elemekre az alábbi tulajdonságok vonatkoznak*/
        
 
-       .pirosdiv {
+.pirosdiv
+    {
         background-color: red;
         height: 120px;
         color: white;
         text-align: center;
-        padding-top: 80px;
+        padding-top: 70px;
           
     }    
 /*    a kettőskereszt id-t jelent css-ben, a pont class-t jelent*/
-       #lekerekitett {
-           
+#lekerekitett
+       {
+           padding: 30px;
+           margin-top: 20px;
+           /*a margin a html elem körül hat */
            background-color: black;
            color: white;
            border-radius: 20px;
            height: 300px;
-           text-align: center;
-           padding-top: 80px;    
-           padding: 30 px ;
-           /*a padding befelé tolja a tartalmat */
-           margin-top: 30px;
-/*           a margin a html elem körül hat */
+           
+           
+           
+          
            
 
        }    
@@ -70,7 +72,50 @@
        
        
 </style>
-        sdadsads
+   
+<div class="doboz sarga-doboz">Ez itt egy sarga doboz</div>
+<div class="doboz zold-doboz">Ez itt egy zold doboz</div>
+<div id="specialis-doboz" class="doboz">Ez egy specialis doboz</div>   
+<style>
+/*    a # kettőskereszt id-t jelent css-ben, a pont pedig class-t jelent*/
+   
+    .doboz
+    {
+        
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        margin: 20px;
+        color: white;
+        
+    }
     
+    .sarga-doboz
+    {
+        color: black;
+        background-color: yellow;
+    }
+    
+    .zold-doboz 
+    {
+        
+        background-color: green;
+        
+    }
+    #specialis-doboz
+    {
+        
+    
+        background-color: black;
+        border: 10px solid green;
+        
+    }
+    
+    
+    
+    
+    
+    
+    </style>    
 </body>
 </html>
