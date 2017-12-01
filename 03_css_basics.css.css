@@ -1,0 +1,72 @@
+/*csslint known-properties:false, */
+
+/*CSSLint*/
+
+
+.fo-menu
+    {
+    background-color: aqua;
+    height: 80px;
+    
+    
+    }
+/*ez a fo-menu classon belüli menüpont class-okat választja ki*/
+.fo-menu .menupont 
+    {
+    
+    height: 40px;
+    /*körben mindehol 10px a margin*/
+    /* margin: 10px*/
+    margin-left: 10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    
+    background-color: blue;
+    color: white;
+/*    ez a css property megváltoztatja a html elem alpértelmezett működését,jelen esetben*/
+/*      egy block szintű elem (div)-ből inline elem-et csinál, de a block tulajdonságait is megőrzi */
+/*        azaz, reagálni fog az elem a width,és height paraméterekre*/
+/*        read more: https:/www.w3schools.com/css/css_inline-block.asp*/
+        display: inline-block;
+    padding-top: 22px;
+    padding-left: 10px;
+    padding-right:10px;
+    padding-bottom: 0px;
+        
+
+    }
+.al-menu{
+    
+   margin-top: 20px;
+    float:  right;
+    
+}
+
+
+.al-menu .menupont{
+    
+    display: inline-block;
+    margin-left: 10px;
+    text-decoration: underline;
+    
+    
+}
+/*ha a menüpont fölé visszük az egeret, akkor bekékül az adott menüpont*/
+
+.al-menu .menupont:hover {
+    
+    color: blue;
+    
+}
+
+.tartalom
+
+{
+    
+    background-color: lightgray;
+    margin-top: 40px;
+    height: 1000px; /*ez csak azért kell,hogy a scrollbar megjelenjen*/
+    
+    
+    
+}
