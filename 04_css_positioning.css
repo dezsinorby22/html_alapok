@@ -6,16 +6,16 @@ body
     
 .fixed-doboz
 {
-    width: 200px;
+    width: 300px;
     height: 50px;
-    background-color: blue;
+    background-color: lightblue;
     color: white;
 /*    a position fixed, kiszedi az elemet a document flow-ból, és egy fix helyre beteszi*/
 /* A többi elem számára ez az elem nem lesz látható*/
     position: fixed;
 /*   Ezek csak akkor műkődnek, ha a position: fixed be van állítva*/
     top: 0;
-    right: 0;
+/*    right: 0;*/
 /*    a többi nem statikus pozíciójú elemhez képest ez az elem előrébb lesz*/
     z-index: 1;
     
@@ -30,14 +30,20 @@ body
 /*    az absolute positon majdnem olyan mint a fixed, de az elem nem marad a böngésző ablakhoz képest fix helyen*/
 /*    a position absolute kiveszi az elemet a document flow-ból*/
     position: absolute;
+    
+  
+    
 }
 .narancs-doboz
 {
 /*    a position propery alapértelmezett értéke a static*/
+/*    static position esetén nincs értelme a z-index-nek*/
+    
     position: static;
     width: 300px;
     height: 300px;
     background-color: orange;
+    
     
     
 }
@@ -46,10 +52,10 @@ body
     width: 500px;
     height: 500px;
     background-color: blue;
-    /*a letaive position esetén a többi elem számára ez az elem ugyanúgy látható marad, és nem esik ki*/ 
+    /*a relative position esetén a többi elem számára ez az elem ugyanúgy látható marad, és nem esik ki*/ 
     /*    a document flow-ból, viszont el lehet mozdítani a pozícióját, a böngészőhöz képest relatíven*/
-    position: relative;
-    left: 250px;
+    position: static;
+    left: 550px;
     top: 50px;
     
     
@@ -63,6 +69,9 @@ body
     width: 150px;
     height: 50px;
     background-color: red;
+/*   Ha egy szülő elem position absolute, vag relative-ba van,*/
+/*    akkor a benne lévő elem ha abosulte,vagy relative position-t kap, */
+/*    akkor a szülőhöz képest fog elmozdulni, egyébként pedig a böngésző ablakhoz képest mozdulna el*/
     position: absolute;
     left: 200px;
     
